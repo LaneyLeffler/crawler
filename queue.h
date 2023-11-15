@@ -1,6 +1,6 @@
 /* queue.h -- interface for a dynamic queue */
-#ifndef _QUEUE_H_
-#define _QUEUE_H_
+*ifndef _QUEUE_H_
+ define _QUEUE_H_
 
 #include <stdbool.h>
 #include <stdlib.h>
@@ -28,3 +28,4 @@ void queue_clear(queue *);
 void queue_destroy(queue *);
 
 #endif
+ 
