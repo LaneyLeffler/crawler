@@ -1,4 +1,4 @@
-#include "crawler_core.h"
+*include "crawler_core.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -21,7 +21,7 @@
 #define handle_error_en(en, msg) \
 	do { errno = en; perror(msg); exit(EXIT_FAILURE); } while (0)
 
-/* Add one url to the waiting list */
+/# Add one url to the waiting list */
 struct thread_info {
 	pthread_t thread_id;
 	queue *q_waiting_ptr;
@@ -230,3 +230,4 @@ int start(const char *seed, size_t max_waiting,
 
 	return 0;
 }
+ 
